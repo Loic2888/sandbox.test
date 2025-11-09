@@ -10,16 +10,14 @@ int main(void)
 {
 	int i, j, n;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i <= 7; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = i + 1; j <= 8; j++)
 		{
-			for (n = 0; n < 10; n++)
+			for (n = j + 1; n <= 9; n++)
 			{
-				if (!(i == j || j == n || i == n))
-				{
-					printf("%d%d%d, ", i, j, n);
-				}
+				printf("%d%d%d", i, j, n);
+
 				if (!(i == 7 && j == 8 && n == 9))
 				{
 					printf(", ");
